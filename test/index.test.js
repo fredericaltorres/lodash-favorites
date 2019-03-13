@@ -1,5 +1,7 @@
 /*
-  Chai: https://www.chaijs.com/guide/styles/#expect
+    Some of my favorites Lodash functions
+
+    Unit tested with Mocha and Chai: https://www.chaijs.com/guide/styles/#expect
 */
 const _ = require('lodash');
 const expect = require('chai').expect;
@@ -172,10 +174,6 @@ describe('Lang Suite', () => {
           const o = _.defaultsDeep({ 'a': { 'b': 2 } }, { 'a': { 'b': 1, 'c': 3 } });
           assert.deepEqual(o, { 'a': { 'b': 2, 'c': 3 } });
         }); 
-  });    
+    });
 });
-
-
-
-
 
